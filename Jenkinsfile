@@ -12,5 +12,8 @@ node(){
     stage('Release'){
         echo " Release Job is Succesful"
     }
+    stage('Notify'){
+        echo " Notify Job is Succesful"
+    }
 }
 
