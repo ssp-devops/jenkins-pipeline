@@ -14,6 +14,7 @@ node(){
     }
     stage('Notify'){
         echo " Notify Job is Succesful"
+        slackSend channel: 'jenkins-notify', color: 'good', message: 'Success ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)', teamDomain: 'sspcloudpro', tokenCredentialId: 'sspcloudslacktoken', username: 'jenkins'
     }
 }
 
