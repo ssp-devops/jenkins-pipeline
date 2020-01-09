@@ -1,4 +1,4 @@
-node(){
+node('ubuntu'){
     stage('Build'){
         echo " Build Job is Succcsful"
     }
