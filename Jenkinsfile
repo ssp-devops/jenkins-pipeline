@@ -1,4 +1,4 @@
-node('ubuntu'){
+node('aws'){
     stage('Build'){
         echo " Build Job is Succcsful"
     }
